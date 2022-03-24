@@ -5,12 +5,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: serif;
+	font-family: 'Roboto Slab', serif;
 	text-shadow: 1px 1px rgb(10, 10, 10);
 }
 
 p {
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
+	line-height: -1.5;
+	letter-spacing: 2px;
 }
 
 /* Content wrapper */
@@ -19,6 +21,7 @@ p {
 	background-color: white;
 	margin: auto;
 	padding: 15px;
+	height: 1000px;
 	
 }
 
@@ -35,6 +38,11 @@ header {
  nav {
 	 padding: 12px;
 	 border: 1px solid black;
+	 /* text-align: left; */
+	 position: sticky;
+	 left: 0;
+	 top: 0;
+	 z-index: 1;
 	 
 } 
 
@@ -81,8 +89,8 @@ nav a:hover {
 
 .column img {
 	width: 45%;
-	float: left;
-	padding-right: 10px;
+	float: right;
+	padding-left: 10px;
 }
 
 .col-two {
@@ -102,5 +110,10 @@ footer {
 	border: 1px solid black;
 	text-align: center;
 	background-color: black;
+	color: white;
+}
+
+/* icons */
+.fa-dog {
 	color: white;
 }
